@@ -12,12 +12,15 @@ students_resource = StudentsResource()
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return {"message": "Hello World!!!"}
 
 
 @app.get("/hello/{name}")
 async def say_hello(name: str):
-    return {"message": f"Awesome cloud developer dff9 says hello {name}"}
+    return {
+        "message": f"Awesome cloud developer hrl2116 says hello {name}",
+        "Sender": "Hannah Luo"
+    }
 
 
 @app.get("/hello_text/{name}")
